@@ -1,0 +1,840 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    overflow-x:hidden;
+      font-family: "Poiret One", serif;
+}
+img{
+    width: 100%;
+}
+a {
+    
+     animation:slideInLeft 3s ease;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "Poiret One", serif;
+    font-weight: 800;
+    font-size: 25px;
+    font-style: normal;
+    position: relative; /* Суреттің үстіне шығуын қамтамасыз ету үшін */
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.header {
+    
+    padding: 17px;
+    background: #7d9678 url(https://pro-buket.kz/wp-content/themes/twentynineteen/images/page-bg.png?v=1) center top;
+    display: flex;
+    flex-direction: row;
+    gap: 165px;
+    justify-content: center;
+}
+
+.header a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%; /* Мәтінге теңестіру */
+    height: 100%;
+    background: url(https://pro-buket.kz/wp-content/themes/twentynineteen/images/nav-circle.svg?v=1) no-repeat center center;
+    background-size: contain;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    z-index: -1;
+}
+
+.header a:hover::before {
+    opacity: 1;
+    z-index: 1;
+}
+
+
+.flower{
+   
+   font-family: "Poiret One", serif;
+  font-size: 30px;
+  font-weight: 700;
+  color:pink;
+  font-style: normal;
+}
+
+.FONT{
+     font-family: "Poiret One", serif;
+     font-size: 30px;
+     margin-right: -190px;
+     margin: 100px;
+      animation:zoomIn 4s ease;
+}
+.FONT:hover{
+     animation-duration: 2s; 
+
+}
+.div{
+    margin-top: -20px;
+}
+
+.HEAD{
+    
+    padding-left: 100px;
+    display: flex;
+    gap:100px;
+    height:120px;
+    background-color: #f7f0eb;
+}
+
+
+.pp{
+    font-weight: 600;
+    text-align: left;
+   margin-left: -90px;
+    display: flex;
+    padding-left: 10px;
+    height: 60px;
+    font-family: "Poiret One", serif;
+    border-left: 1px  #7d9678 solid;
+   
+}
+@font-face {
+    font-family: 'Gilroy Ultra Light';
+    src: url('Gilroy-UltraLight.eot');
+    src: url('Gilroy-UltraLight.eot?#iefix') format('embedded-opentype'),
+    url('Gilroy-UltraLight.woff') format('woff'),
+    url('Gilroy-UltraLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+
+.bb{
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 0px;
+   
+  
+}
+
+.dis{
+    margin-top: -20px;
+    width: 280px;
+    
+    margin-left: 600px;
+}
+.DIV{
+    font-family: 'Gilroy Ultra';
+    font-weight: bold;
+}
+.card:hover{    
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; 
+  
+}
+        .HEAD a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            
+        }
+        .lang-switcher {
+            display: flex;
+            gap: 10px;
+        }
+        .lang-switcher button {
+            background: none;
+            border: 1px solid gray;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    margin-left: 40px;
+    margin-top: -40px;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+   
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: white; /* Контрастный цвет текста */
+    text-align: center;
+    padding: 20px;
+   /* Лёгкая затемнённость для читаемости */
+    border-radius: 10px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 670px;
+   
+}
+
+.text h1 {
+    
+   width:800px;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #7d9678;
+   
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.feature {
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.fade-in {
+   font-family: "Poiret One", serif;
+      margin-top: 290px;
+       font-weight: 500;
+       font-size: 70px;
+    transform: translateY(20px);
+     animation:slideInLeft 4s ease;
+    /* animation:scale(1) 2s ease-in-out forwards; */
+}
+
+.fade-on {
+    opacity: 0;
+     font-family: "Satisfy", serif;
+     
+       font-size: 45px;
+       margin-top: 200px;
+       margin-bottom: 15px;
+    transform: translateY(20px);
+    animation: fadeInUp 3s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+.availability {
+            color:#7d9678;
+            font-size: 15px;
+        }
+        .rating {
+            color:goldenrod;
+            font-size: 18px;
+        }
+
+
+.d{
+    display: flex;
+    gap: 19px;
+}
+
+
+
+
+.hits-container {
+            display: grid;
+            grid-template-columns: repeat(4, 3fr);
+            gap: 30px;
+            padding: 10px;
+            margin: 150px;
+            justify-content: center;
+            animation:slideInUp 5s ease;
+        }
+
+         .rating {
+            color: gold;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        .hit-item {
+            background: #fff;
+            border-radius: 10px;
+            transition: transform 0.2s ease;
+            overflow: hidden;
+      
+        }
+        .hit-item:hover {
+            transform: scale(1.05);
+             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .hit-item img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+        .hit-info {
+            padding: 15px;
+             
+         
+        }
+        .hit-title {
+            font-size: 17px;
+             font-family: "Poiret One", serif;
+            font-weight: bold;
+        }
+        .hit-price {
+            font-size: 28px;
+            border-radius: 5px;
+            margin: 8px 0;
+           
+        }
+        .order-btn {
+            display: inline-block;
+            background: #7d9678 url(https://pro-buket.kz/wp-content/themes/twentynineteen/images/page-bg.png?v=1) center top;
+            text-align: center;
+            color: #000;
+            padding: 5px 80px;
+            border-radius: 5px;
+            font-size: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.9s;
+        }
+        .order-btn:hover {
+            background:none;
+            border: #7d9678 2px solid;
+        }
+
+ 
+.hiti_pr{
+  font-family: "Poiret One", serif;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: center;
+    justify-content: center;
+    background: url(https://pro-buket.kz/wp-content/themes/twentynineteen/images/h2-bg.svg?v=1) no-repeat right center;
+    background-size: contain;
+    margin-top: 170px;
+    width: 650px;
+    
+}
+
+
+
+.gallery {
+            display: grid;
+            width:900px;
+            margin: 50px;
+            grid-template-columns: repeat(4, 3fr);
+            gap: 10px;
+            justify-content: center;
+            margin-left: 300px;
+            text-align: center;
+            padding: 50px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .text22 {
+             font-family: "Poiret One", serif;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    background: url(https://pro-buket.kz/wp-content/themes/twentynineteen/images/h2-bg.svg?v=1) no-repeat right center;
+    background-size: contain;
+    margin-top: 100px;
+    width: 650px;
+    margin-left: 470px;
+        }
+        .line {
+            width: 100%;
+            height: 1px;
+            justify-content: center;
+            background-color: #fff;
+            margin: 0 auto 20px auto;
+        }
+
+
+.big{
+padding: 30px;
+    background: #7d9678 url(https://pro-buket.kz/wp-content/themes/twentynineteen/images/page-bg.png?v=1);
+}        
+
+
+
+
+
+
+
+
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+.scroll-up {
+            position: fixed;
+            bottom: 20px;
+            border-radius: 500%;
+            right: 20px;
+            padding: 10px 20px;
+            background-color:#7d9678;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 25px;
+            border-radius: 10px;
+            display: none; /* Басында көрсетпейміз */
+        }
+
+ 
+        h2 {
+            font-size: 28px;
+            text-align: center;
+            background: url(https://pro-buket.kz/wp-content/themes/twentynineteen/images/h2-bg.svg?v=1) no-repeat  center;
+
+        }
+
+        .swiper-wrapper {
+            width: 90%;
+            max-width: 1400px;
+            gap:10px;
+            display: flex;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            max-width: 250px;
+            height: 350px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            width:50px;
+            opacity: 100%;
+            color: #000000; /* Стрелки серого цвета */
+        }
+
+        .swiper-pagination {
+            margin-top: 10px;
+        }       
+        .hiti_prr{
+  font-family: "Poiret One", serif;
+    font-size: 30px;
+    margin-bottom: 80px;
+    font-weight: 400;
+    text-align: center;
+
+    background: url(https://pro-buket.kz/wp-content/themes/twentynineteen/images/h2-bg.svg?v=1) no-repeat right center;
+    background-size: contain;
+    margin-top: 150px;
+   
+   
+}
+
+
+div.scroll-container {
+  
+  overflow: auto;
+  
+  white-space: nowrap;
+  padding: 15px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+  width: 300px;
+  height:400px;
+}
+
+        .container {
+           
+            display: flex;
+             font-family: "Poiret One", serif;
+            justify-content: center;
+            align-items: center;
+            min-height: 60vh;
+            min-width: 190vh;
+            margin-top: 100px;
+                background: #7d9678 url(https://pro-buket.kz/wp-content/themes/twentynineteen/images/page-bg.png?v=1);
+
+            padding: 80px;
+        }
+        .content {
+            max-width: 500px;
+            color: white;
+            margin-right: 100px;
+            text-align: left;
+        }
+        .content2 {
+            max-height: 900px;
+            font-size: 18px;
+            max-width: 700px;
+            margin-right: 200px;
+            color: white;
+            text-align: left;
+        }
+        .content h1 {
+            font-size: 48px;
+            margin-bottom: 40px;
+        }
+        .content p {
+            text-align: left;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .w{
+            font-family:'Times New Roman', Times, serif;
+        }
+
+
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+           
+                background: #7d9678 url(https://pro-buket.kz/wp-content/themes/twentynineteen/images/page-bg.png?v=1) center top;
+
+        }
+        .footer div {
+            text-align: center;
+        }
+        .footer a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        .footer a:hover {
+            color:#f7f0eb;
+        }
+        .footer-icons a {
+            margin: 0 10px;
+            font-size: 24px;
+        }
+
+        .pppp{
+             font-family: "Poiret One", serif;
+             font-size: 30px;
+             text-align: left;
+                         animation:slideInRight 5s ease;
+
+             
+        }
+
+     .hits-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    gap: 10px;
+    padding: 10px;
+    margin: 30px auto;
+    max-width: 600px; /* Center the grid */
+}
+
+.hit-item {
+    background: #fff;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.hit-item:hover {
+    transform: scale(1.02);
+}
+
+.hit-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.hit-info {
+    text-align: center;
+    padding: 5px;
+}
+
+.hit-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.hit-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #7d9678;
+}
+
+.order-btn {
+    display: inline-block;
+    background: #7d9678;
+    color: white;
+    padding: 5px 90px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 5px;
+    transition: 0.3s;
+}
+
+.order-btn:hover {
+    background: #5c7b5e;
+}
+
+.navik{
+    gap:190px; 
+    font-size:
+     30px; 
+     text-align:start;
+}
+
+/* Media query for very small screens (1 item per row) */
+@media (max-width: 1024px) {
+    .navik{
+        gap: 0;
+    }
+    .fade-in {
+   font-family: "Poiret One", serif;
+      margin-top: 200px;
+       font-weight: 500;
+       font-size: 70px;
+    transform: translateY(20px);
+  
+     animation:slideInLeft 4s ease;
+    /* animation:scale(1) 2s ease-in-out forwards; */
+}
+
+.fade-on {
+    opacity: 0;
+     font-family: "Satisfy", serif;
+     
+       font-size: 35px;
+      margin-top: 50px;
+       margin-bottom: 15px;
+    transform: translateY(20px);
+    animation: fadeInUp 3s ease-in-out forwards;
+}
+    body {
+        font-family: "Poiret One", serif;
+    }
+    .hits-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 item per row */
+    }
+    .text {
+        margin-right: 0;
+       
+    }
+    .hero-video {
+    position: absolute;
+    top: 40%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 200%;
+   
+    object-fit: cover;
+    z-index: -1;
+}
+    .hiti_pr {
+         
+  font-family: "Poiret One", serif;
+    font-size: 30px;
+    margin-bottom: 80px;
+    font-weight: 400;
+    text-align: start;
+    width: 330px;
+    
+    align-items: flex-start;
+    background: url(https://pro-buket.kz/wp-content/themes/twentynineteen/images/h2-bg.svg?v=1) no-repeat  center right;
+    background-size: contain;
+    margin-top: 150px;
+   
+   
+}
+    }
+    .pp {
+        font-weight: 600;
+        text-align: left;
+        margin-left: 0;
+        display: flex;
+        height: 60px;
+        font-family: "Poiret One", serif;
+        border-left: 1px solid #7d9678;
+    }
+    .hit-title {
+        font-size: 14px;
+    }
+    .hit-price {
+        font-size: 18px;
+    }
+    .order-btn {
+        font-size: 14px;
+        border-radius: 5px;
+        padding: 5px 40px;
+    }
+    .footer {
+        margin-top: 50px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background: #7d9678 url(https://pro-buket.kz/wp-content/themes/twentynineteen/images/page-bg.png?v=1) center top;
+    }
+    .container {
+        display: flex;
+        font-family: "Poiret One", serif;
+        justify-content: center;
+        align-items: center;
+        min-height: auto;
+        min-width: 100%;
+        margin-top: 50px;
+        background: #7d9678 url(https://pro-buket.kz/wp-content/themes/twentynineteen/images/page-bg.png?v=1);
+        padding: 40px;
+    }
+    .content {
+        max-width: 100%;
+        color: white;
+        text-align: center;
+        margin: 0;
+    }
+    .content2 {
+        font-size: 16px;
+        color: white;
+        text-align: center;
+    }
+    .content h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .content p {
+        font-size: 16px;
+        line-height: 1.4;
+        margin-bottom: 10px;
+    }
+    .w {
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .FONT {
+        font-family: "Poiret One", serif;
+        font-size: 24px;
+        text-align: center;
+        animation: zoomIn 4s ease;
+    }
+    .fade-in{
+        font-size: 30px;
+        margin-top: -100px;
+        margin-left: 0;
+        width:80px;
+    }
+        ul{
+        gap: 0px !important;
+    }
+.navik{}
+
+@media (min-width: 768px) {
+    .hits-container {
+        grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+        max-width: 1200px;
+    }
+    .text {
+        margin-top: -140px;
+        padding-right: 1000px;
+    }
+    .navik{
+        gap:0;
+    }
+}
+.FONT{
+     font-family: "Poiret One", serif;
+     font-size: 30px;
+      animation:zoomIn 2s ease;
+}
+.FONT:hover{
+    animation:flip;
+     animation-duration: 2s; 
+
+}
+.header {
+    
+    
+    /* background: #7d9678 url(https://pro-buket.kz/wp-content/themes/twentynineteen/images/page-bg.png?v=1) center top; */
+    display: flex;
+    flex-direction: row;
+    /* gap: 165px; */
+    justify-content: center;
+}
+
+
+
+.header a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%; /* Мәтінге теңестіру */
+    /* height: 100%; */
+    background: url(https://pro-buket.kz/wp-content/themes/twentynineteen/images/nav-circle.svg?v=1) no-repeat center center;
+    background-size: contain;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    z-index: -1;
+}
+
+.header a:hover::before {
+    opacity: 1;
+    z-index: 1;
+}
+
